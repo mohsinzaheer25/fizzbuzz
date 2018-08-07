@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.login-box {
+  width: 400px;
+  height: 420px;
+  background: #f9f9f9;
+  box-shadow: 1px 2px 8px grey;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+
+.login-box .welcome {
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Playfair Display', serif;
+}
+
+.login-box #submit {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 70px;
+  margin: 0px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #cecece;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+.login-box #submit:hover {
+  cursor: pointer;
+  background: #1c8adb;
+  color: #fff;
+}
+
+.login-box #result{
+  border: none;
+  background: transparent;
+  outline: none;
+  margin:35px 0px 0px 0px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
