@@ -1,8 +1,8 @@
 # Fizz Buzz Application
 
-Step 1:
+<h3> Step 1: </h3>
 
-Clone the git repository url
+Clone the git repository url on your docker machine.
 
 Step 2:
 
