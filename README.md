@@ -18,7 +18,7 @@ docker run -itd -p 80:80 --name fizzbuzz app
 
 <h4> Step 4: </h4>
 
-Open your instance/local ip alone with port 80 ( e.g. localhost:80) in a browser. You should see a screen like below 
+Open your instance/local ip along with port 80 ( e.g. localhost:80) in a browser. You should see a screen like below 
 
 ![screenshot](https://user-images.githubusercontent.com/7212923/43798449-a46843c8-9a58-11e8-8212-28396475e656.JPG)
 
