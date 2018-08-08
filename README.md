@@ -1,22 +1,22 @@
 # Fizz Buzz Application
 
-<h3> Step 1: </h3>
+<h4> Step 1: </h4>
 
 Clone the git repository url on your docker machine.
 
-Step 2:
+<h4> Step 2: </h4>
 
 Run below command to build the docker image.
 
 docker build -t app .
 
-Step 3:
+<h4> Step 3: </h4>
 
 Run below command to run the container on port 80
 
 docker run -itd -p 80:80 --name fizzbuzz app
 
-Step 4:
+<h4> Step 4: </h4>
 
 Open your instance/local ip alone with port 80 ( e.g. localhost:80) in a browser. You should see a screen like below 
 
