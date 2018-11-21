@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fizz Buzz</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+  <div class="login-box">
+    <p class="welcome"> Welcome to Fizz Buzz</p>
+    <p>
+      <input type="text" id="range" placeholder="Enter a Number">
+    </p>
+    <p>
+      <input type="text" id="guess" placeholder="What do you think, Fizz/Buzz/FizzBuzz/None?">
+    </p>
+    <button id="submit" onclick="fizzFunction()"> Submit</button>
+    <p id="result"></p>
+    <script>
+    var maxValue = document.getElementById("range");
+    var playerGuest = document.getElementById("guess");
+    function fizzFunction() {
+      var num = maxValue.value;
+      var str = playerGuest.value;
+      var res = str.toLowerCase();
+      if(isNaN(num)){
+        alert("Please, enter a number it can't be "+ num );
+        } else{
+          for (var i=1; i <= num; i++)
+          {
+            if (i % 15 == 0 && res == "fizzbuzz")
+            document.getElementById("result").innerHTML = "You guess it right, it's a FizzBuzz";
+            else if (i % 3 == 0 && res == "fizz")
+            document.getElementById("result").innerHTML = "You guess it right, it's a Fizz";
+            else if (i % 5 == 0 && res == "buzz")
+            document.getElementById("result").innerHTML ="You guess it right, it's a Buzz";
+            else if ((i % 15 != 0) && (i % 5 != 0) && (i % 3 != 0) && (res == "none"))
+            document.getElementById("result").innerHTML = "You guess it right, it's not a Fizz Buzz Number";
+            else
+            document.getElementById("result").innerHTML = "Your guess is wrong, Try again!";
+            }
+          }
+        }
+    </script>
+</body>
+</html>
